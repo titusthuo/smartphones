@@ -1,0 +1,202 @@
+.hero {
+    display: flex;
+    min-height: calc(100vh - 74px);
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-image-url.jpg');
+    /* Add your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Use cover to maintain aspect ratio */
+}
+
+.hero-image__overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: #7e4f8e;
+    /* Dark Purple, adjusted to complement your theme */
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.hero-image h2 {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 138px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add a subtle text shadow for better visibility */
+}
+
+.hero-content {
+    flex: 1.22;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.hero-content-info {
+    padding: 64px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
+    border-radius: 20px;
+    /* Add a slight border radius for a softer look */
+}
+
+.hero-content-info h1 {
+    font-size: 80px;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #00a8e8;
+    /* Adjusted to a teal color */
+    text-align: center;
+}
+
+.hero-content-info p {
+    margin: 32px 0 0 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #333333;
+    /* Adjusted to a darker gray */
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero-content__buttons {
+    margin: 41px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+}
+
+.hero-content__order-button,
+.hero-content__play-button {
+    padding: 20px;
+    border-radius: 36px;
+    min-width: 212px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content__order-button {
+    background: #00a8e8;
+    /* Teal color */
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.hero-content__order-button:hover,
+.hero-content__play-button:hover {
+    background: #32475e;
+    /* Darker shade on hover */
+}
+
+.hero-content__play-button {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1a1a1a;
+    /* Dark Gray */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.hero-content__play-button img {
+    margin-right: 12px;
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+}
+
+.hero-content__testimonial {
+    padding: 32px 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #f0f0f0;
+    /* Light Gray */
+    border-radius: 20px;
+    /* Add border radius for a softer look */
+    margin-top: 64px;
+    /* Adjusted spacing */
+}
+
+.hero-content__customer {
+    flex: 1;
+    gap: 10px;
+}
+
+.hero-content__customer h4 {
+    font-size: 32px;
+    /* Adjusted font size */
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    color: #7e4f8e;
+    /* Dark Purple */
+}
+
+.hero-content__customer p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #5c6f71;
+    /* Steel Blue */
+    opacity: 0.8;
+}
+
+.hero-content__review {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(2, 2, 2, 0.1);
+    min-width: 200px;
+}
+
+.hero-content__review img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.hero-content__review p {
+    font-size: 14px;
+    /* Adjusted font size */
+    font-weight: 400;
+    line-height: 24px;
+    /* Adjusted line height */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #5c6f71;
+    /* Steel Blue */
+    opacity: 0.8;
+}
